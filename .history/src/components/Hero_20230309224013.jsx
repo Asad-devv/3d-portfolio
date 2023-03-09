@@ -13,9 +13,7 @@ const Hero = () => {
           <div className='w-5 h-5  rounded-full bg-[#915eff]'/>
           <div className=" w-1 sm:h-80 h-40 violet-gradient"/>
         </div>
-        <div>
-          <h1>Hi , I am </h1>
-        </div>
+        <
       </div>
     </section>
   )
