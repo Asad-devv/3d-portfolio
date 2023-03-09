@@ -2,6 +2,7 @@ import React from 'react'
 
 import {motion } from 'framer-motion'
 import {styles} from "../style" 
+ import { ComputersCanvas } from "./canvas";
 
 
 const Hero = () => {
@@ -14,9 +15,11 @@ const Hero = () => {
           <div className=" w-1 sm:h-80 h-40 violet-gradient"/>
         </div>
         <div>
-          <h1>Hi , I am </h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Hi , I'm<span className="text-[#915eff]"> Asad shaikh</span> </h1>
+        <p className={`${styles.heroSubText} mt-2 text-white-100`}> kabhi socha bhi to ye gumaan hua kai <br className="sm:block hidden"/> haan kahin to pohanchu ga</p>
         </div>
       </div>
+      <ComputersCanvas/>
     </section>
   )
 }
