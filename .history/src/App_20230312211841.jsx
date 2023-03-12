@@ -42,7 +42,7 @@ function App() {
         </div>
       </BrowserRouter>
       <div>
-        <TextShpere/>
+        {/* <SkillsSphere/> */}
       </div>          
     </>
   );

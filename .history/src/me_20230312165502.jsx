@@ -19,35 +19,38 @@ const TextSphere = ({ texts }) => {
   // Create a mesh using the geometry and material
   const mesh = new THREE.Mesh(geometry, material);
 
-  // Load a font and create a text geometry for each text
-  const fontUrl = "/fonts/helvetiker_regular.typeface.json";
-  const textGeometries = [];
+  // Create a font loader
   const fontLoader = new THREE.FontLoader();
-  fontLoader.load(fontUrl, (font) => {
-    texts.forEach((text) => {
-      const geometry = new THREE.TextGeometry(text, {
-        font: font,
-        size: 0.3,
-        height: 0.1,
-      });
-      geometry.center();
-      textGeometries.push(geometry);
-      const textMaterial = new THREE.MeshPhongMaterial({
-        color: 0x333333,
-        specular: 0xffffff,
-        shininess: 50,
-        flatShading: true,
-      });
-      const textMesh = new THREE.Mesh(geometry, textMaterial);
-      // Calculate the position of the text on the sphere
-      const position = calculatePositionOnSphere(
-        textGeometries.length - 1,
-        texts.length
-      );
-      textMesh.position.set(position.x, position.y, position.z);
-      groupRef.current.add(textMesh);
+
+  // Load a font and create a text geometry for each text
+  const textGeometries = texts.map((text) => {
+    const font = fontLoader.load("/fonts/helvetiker_regular.typeface.json");
+    const geometry = new THREE.TextGeometry(text, {
+      font: font,
+      size: 0.3,
+      height: 0.1,
     });
+    geometry.center();
+    return geometry;
   });
+
+  // Create a material for the text
+  const textMaterial = new THREE.MeshPhongMaterial({
+    color: 0x333333,
+    specular: 0xffffff,
+    shininess: 50,
+    flatShading: true,
+  });
+
+  // Create a mesh for each text and add it to the group
+  const textMeshes = textGeometries.map((geometry, index) => {
+    const textMesh = new THREE.Mesh(geometry, textMaterial);
+    // Calculate the position of the text on the sphere
+    const position = calculatePositionOnSphere(index, textGeometries.length);
+    textMesh.position.set(position.x, position.y, position.z);
+    return textMesh;
+  });
+  textMeshes.forEach((textMesh) => groupRef.current.add(textMesh));
 
   // Rotate the group on the Y axis
   useFrame(() => {

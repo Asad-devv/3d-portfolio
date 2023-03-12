@@ -21,6 +21,5 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas,
-  TextShpere
+  StarsCanvas
 }

@@ -11,7 +11,6 @@ import {
   Tech,
   Works,
   StarsCanvas,
-  TextShpere
 } from "./components";
 import SkillsSphere from "./me";
 
@@ -42,7 +41,7 @@ function App() {
         </div>
       </BrowserRouter>
       <div>
-        <TextShpere/>
+        {/* <SkillsSphere/> */}
       </div>          
     </>
   );
