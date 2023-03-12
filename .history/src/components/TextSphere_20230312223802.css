@@ -16,7 +16,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    font-family: "poppins";
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.0625em;
     font-size: 1.3em;
@@ -24,9 +24,8 @@
 
 /* Change color of each text in sphere on hover   */
 .tagcloud--item {
-    color: white;
+    color: #00ffffff;
     text-transform: uppercase;
-
     font-size: 25px;
 }
 

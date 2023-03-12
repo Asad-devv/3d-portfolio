@@ -48,9 +48,9 @@ const TextShpere = () => {
 
   return (
     <>
-      <div className="text-shpere cursor-pointer">
+      <div className="text-shpere cursor-pointer sm:w-[200px] sm:h-[]">
         {/* span tag className must be "tagcloud"  */}
-        <span className="tagcloud "> </span>
+        <span className="tagcloud"> as</span>
       </div>
     </>
   );

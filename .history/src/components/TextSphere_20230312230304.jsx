@@ -29,7 +29,7 @@ const TextShpere = () => {
         if (window.screen.width <= 778) {
           radii = 150;
         } else {
-          radii = 400;
+          radii = 290;
         }
         return radii;
       }
@@ -48,9 +48,9 @@ const TextShpere = () => {
 
   return (
     <>
-      <div className="text-shpere cursor-pointer">
+      <div className="text-shpere cursor-pointer sm:h-[300px] w- sm:w-[300px] font-[12px] ">
         {/* span tag className must be "tagcloud"  */}
-        <span className="tagcloud "> </span>
+        <span className="tagcloud"> as</span>
       </div>
     </>
   );

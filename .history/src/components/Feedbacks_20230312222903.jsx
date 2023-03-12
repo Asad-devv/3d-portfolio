@@ -31,7 +31,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
         </div>
 
       </div>
-    </div>)
+    </motion.div>)
 
 
 }
@@ -43,10 +43,10 @@ const Feedbacks = () => {
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]  `}
       >
-        <div variants={textVariant()}>
+        <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
           <p className={styles.sectionHeadText}>Testimonials</p>
-        </div>
+        </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => {

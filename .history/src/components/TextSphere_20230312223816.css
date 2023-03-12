@@ -16,7 +16,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    font-family: "poppins";
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.0625em;
     font-size: 1.3em;
@@ -26,7 +26,6 @@
 .tagcloud--item {
     color: white;
     text-transform: uppercase;
-
     font-size: 25px;
 }
 

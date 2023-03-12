@@ -50,7 +50,7 @@ const TextShpere = () => {
     <>
       <div className="text-shpere cursor-pointer">
         {/* span tag className must be "tagcloud"  */}
-        <span className="tagcloud "> </span>
+        <span className="tagcloud "> s</span>
       </div>
     </>
   );
