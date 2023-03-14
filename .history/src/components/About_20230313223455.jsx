@@ -6,15 +6,11 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import TextSphere from "./TextSphere";
-
-
-
 
 const ServiceCard = ({index,title,icon}) => {
   return(
     <Tilt className="xs:w-[250px] w-full  ">
-      <div data-aos="fade-up"     data-aos-duration="1000"
+      <div data-aos="fade-up"     data-aos-duration="2000"
  className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" variants={fadeIn("right" , "spring",0.5*index,0.75)}>
 <div options={{max:45,scale:1,speed: 450}} className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
   <img src={icon} alt={title} className="w-16 h-16 object-contain" />
@@ -48,9 +44,6 @@ const About = () => {
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
-      </div>
-      <div>
-        <TextSphere/>
       </div>
     </>
   );

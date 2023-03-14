@@ -32,7 +32,6 @@ function App() {
           </div>
           <About />
           <Experience /> */}
-          <About />
           {/* <Tech />  */}
           {/* <Works />
           <Feedbacks />

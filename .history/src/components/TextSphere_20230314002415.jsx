@@ -50,15 +50,12 @@ const TextSphere = () => {
 
     const options = {
       radius: radiusValue(),
-      maxSpeed: "fast",
-      initSpeed: "fast",
-      direction: 435,
-      keep:true,
-      size:1,
+      maxSpeed: "normal",
+      initSpeed: "normal",
+      keep:false,
     };
 
-    const instance  = TagCloud(container, texts, options);
-    console.log(instance)
+    TagCloud(container, texts, options);
   }, [isMobile]);
 
   return (

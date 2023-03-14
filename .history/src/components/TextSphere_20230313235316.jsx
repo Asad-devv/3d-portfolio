@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./TextSphere.css";
-import TagCloud from "TagCloud";
+import TagCloud from "tag-cloud-canvas";
 
 const TextSphere = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,29 +19,11 @@ const TextSphere = () => {
     };
   }, []);
 
-  // Animation settings for Text Cloud
   useEffect(() => {
-    const container = ".tagcloud";
-    const texts = [
-      "HTML",
-      "CSS",
-      "SASS",
-      "JavaScript",
-      "React",
-      "Vue",
-      "Nuxt",
-      "NodeJS",
-      "Babel",
-      "Jquery",
-      "ES6",
-      "GIT",
-      "GITHUB",
-    ];
     let radii;
     function radiusValue() {
       if (window.screen.width <= 778) {
-        radii = 140;
-
+        radii = 10;
       } else {
         radii = 400;
       }
@@ -50,24 +32,23 @@ const TextSphere = () => {
 
     const options = {
       radius: radiusValue(),
-      maxSpeed: "fast",
-      initSpeed: "fast",
-      direction: 435,
-      keep:true,
-      size:1,
+      maxSpeed: "normal",
+      initSpeed: "normal",
+      keep: true,
     };
 
-    const instance  = TagCloud(container, texts, options);
-    console.log(instance)
-  }, [isMobile]);
+    if (!tagCloudInstance) {
+      const container = document.querySelector(".tagcloud");
+      setTagCloudInstance(TagCloud(container, [], options));
+    }
+  }, [isMobile, tagCloudInstance]);
 
   return (
-    <>
-      <div className="text-shpere">
-        {/* span tag className must be "tagcloud"  */}
-        <span className="tagcloud"></span>
-      </div>
-    </>
+    <div className="text-sphere cursor-pointer">
+      {tagCloudInstance && (
+        <span className="tagcloud">{tagCloudInstance.words}</span>
+      )}
+    </div>
   );
 };
 

@@ -50,7 +50,7 @@ const About = () => {
         })}
       </div>
       <div>
-        <TextSphere/>
+        <T
       </div>
     </>
   );

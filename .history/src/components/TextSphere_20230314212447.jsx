@@ -52,9 +52,7 @@ const TextSphere = () => {
       radius: radiusValue(),
       maxSpeed: "fast",
       initSpeed: "fast",
-      direction: 435,
       keep:true,
-      size:1,
     };
 
     const instance  = TagCloud(container, texts, options);

@@ -54,7 +54,7 @@ const TextSphere = () => {
       initSpeed: "fast",
       direction: 435,
       keep:true,
-      size:1,
+      size:
     };
 
     const instance  = TagCloud(container, texts, options);

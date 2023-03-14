@@ -6,10 +6,6 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import TextSphere from "./TextSphere";
-
-
-
 
 const ServiceCard = ({index,title,icon}) => {
   return(
@@ -48,9 +44,6 @@ const About = () => {
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
-      </div>
-      <div>
-        <TextSphere/>
       </div>
     </>
   );

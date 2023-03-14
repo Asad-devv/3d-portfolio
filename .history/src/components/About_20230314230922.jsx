@@ -49,9 +49,6 @@ const About = () => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
       </div>
-      <div>
-        <TextSphere/>
-      </div>
     </>
   );
 };
