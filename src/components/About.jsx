@@ -33,24 +33,21 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <p className={styles.sectionHeadText}>Overview. </p>
       </div>
+      <div className="flex flex-row flex-1 flex-wrap ">
       <p
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]  "
         variants={fadeIn("", "", 0.1, 1)}
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-        quaerat non eaque? Maiores esse unde harum dolores iure incidunt ea
-        voluptatibus debitis enim, dolor magni commodi reprehenderit? Earum
-        cumque consequatur autem tempore quidem natus explicabo ipsum saepe
-        reiciendis sit, enim reprehenderit quis quia nobis fuga. Illum fugit
-        nihil cum adipisci!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum laborum, nulla consectetur deserunt eligendi sed quibusdam incidunt non soluta dignissimos minima ratione accusamus commodi eaque maiores, ab<br/><br/> aliquid! Rerum amet sit delectus distinctio expedita, similique odio sint voluptates explicabo optio eligendi numquam hic magnam voluptatum. Ipsa quasi illum accusamus veritatis soluta enim nesciunt, numquam <br/><br/>aperiam magnam doloribus dolores. Provident dolor, nulla velit voluptate quia architecto iste voluptatibus consequuntur quam tempora aliquid odit assumenda, sint vitae officiis reprehenderit fugiat aspernatur excepturi <br/><br/> commodi? Adipisci ipsum maiores provident, sit magni temporibus ratione laborum minima numquam dolore aut recusandae accusamus quam mollitia sed!
       </p>
-      <div className="mt-20 flex flex-wrap gap-10">
+    
+      <TextSphere/>
+      
+      </div>
+      <div className=" flex flex-wrap justify-center items-center gap-10">
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
-      </div>
-      <div>
-        <TextSphere/>
       </div>
     </>
   );

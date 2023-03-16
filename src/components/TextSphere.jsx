@@ -1,26 +1,26 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./TextSphere.css";
-import TagCloud from "TagCloud";
-
+// import TagCloud from "TagCloud";
+import { SectionWrapper } from "../hoc";
 const TextSphere = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [tagCloudInstance, setTagCloudInstance] = useState(null);
+  const [instance, setInstance] = useState(null)
+  // const [isMobile, setIsMobile] = useState(false);
+  // useEffect(() => {
+  //   const mediaQuery = window.matchMedia("(max-width:500px)");
+  //   setIsMobile(mediaQuery.matches);
+  //   const handleMediaQueryChange = (event) => {
+  //     setIsMobile(event.matches);
+  //   };
+  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:500px)");
-    setIsMobile(mediaQuery.matches);
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  //   return () => {
+  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  //   };
+  // }, []);
 
   // Animation settings for Text Cloud
   useEffect(() => {
+    if(!instance){
     const container = ".tagcloud";
     const texts = [
       "HTML",
@@ -40,10 +40,10 @@ const TextSphere = () => {
     let radii;
     function radiusValue() {
       if (window.screen.width <= 778) {
-        radii = 140;
+        radii = 170;
 
       } else {
-        radii = 400;
+        radii = 350;
       }
       return radii;
     }
@@ -57,18 +57,21 @@ const TextSphere = () => {
       size:1,
     };
 
-    const instance  = TagCloud(container, texts, options);
+    const inst  = TagCloud(container, texts, options);
+    setInstance(inst)
+    // container.destroy()
     console.log(instance)
-  }, [isMobile]);
+  }
+  }, [ instance]);
 
   return (
     <>
-      <div className="text-shpere">
+      <div className="text-shpere -mt-20">
         {/* span tag className must be "tagcloud"  */}
-        <span className="tagcloud"></span>
+        <span className="tagcloud  "></span>
       </div>
     </>
   );
 };
 
-export default TextSphere;
+export default TextSphere
