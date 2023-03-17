@@ -29,11 +29,11 @@ const ServiceCard = ({index,title,icon}) => {
 const About = () => {
   return (
     <>
-      <div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <p className={styles.sectionHeadText}>Overview. </p>
+      <div className="bag-purple-900	" >
+        <p data-aos="fade-down"  className={styles.sectionSubText}>Introduction</p>
+        <p data-aos="fade-up"  className={styles.sectionHeadText}>Overview. </p>
       </div>
-      <div className="flex flex-row flex-1 flex-wrap ">
+      <div className="flex bg-purplae-900 flex-col md:flex-row ">
       <p
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]  "
         variants={fadeIn("", "", 0.1, 1)}
@@ -53,4 +53,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About,"about");
+export default SectionWrapper(About,"about","bg-purple-900");

@@ -9,6 +9,8 @@ import {
     css,
     reactjs,
     redux,
+    sneakinn,
+    donut,
     tailwind,
     nodejs,
     mongodb,
@@ -46,7 +48,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React JS Developer",
       icon: mobile,
     },
     {
@@ -54,7 +56,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "UI/UX DESIGNER",
       icon: creator,
     },
   ];
@@ -198,7 +200,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Sneakinn",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -215,11 +217,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: sneakinn,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Travel Guider App",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -236,11 +238,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: tripguide,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Donut Website",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -257,7 +259,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: donut,
       source_code_link: "https://github.com/",
     },
   ];

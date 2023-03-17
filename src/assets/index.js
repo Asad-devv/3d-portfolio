@@ -30,7 +30,11 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import donut from "./donut.png"
+import sneakinn from "./sneakinn.png"
 export {
+  sneakinn,
+  donut,
   logo,
   backend,
   creator,

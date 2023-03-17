@@ -68,7 +68,7 @@ const TextSphere = () => {
     <>
       <div className="text-shpere -mt-20">
         {/* span tag className must be "tagcloud"  */}
-        <span className="tagcloud  "></span>
+        <span className="tagcloud text-[0.7rem] "></span>
       </div>
     </>
   );

@@ -30,6 +30,7 @@ function App() {
             <Navbar />
             <Hero />
           </div>
+  
           <About />
           {/* <div> <TextShpere/></div> */}
           
