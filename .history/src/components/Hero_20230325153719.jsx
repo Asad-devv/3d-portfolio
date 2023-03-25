@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}  text-white`}>Hi , I'm<span className="text-[#915eff]"> Asad shaikh</span> </h1>
         <p className={`${styles.heroSubText} font-black	 mt-2 text-white-100`}> <Typewriter words={["UI/UX Designer","Frontend Developer","React Developer"]} className="font-black" cursor={true} typeSpeed={120} loop={true}/> <br className="sm:block hidden"/> </p>
         </div>
-        {/* <SocialLinks/> */}
+        <SocialLinks/>
 
       </div>
       <SocialLinks/>

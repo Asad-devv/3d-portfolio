@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 import Tilt from "react-tilt";
 import { SectionWrapper } from "../hoc";
@@ -38,33 +38,20 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]  "
         variants={fadeIn("", "", 0.1, 1)}
       >
-     I am a second-year student studying computer science and information technology. My passion lies in front-end web development, building user-friendly, efficient, and optimized React applications from scratch.
-
-
-
-<br/><br/> My skills include proficiency in HTML, CSS, JavaScript, Reactjs, Bootstrap, Tailwind, C++, C, Python, OOP, and DSA. I have a solid understanding of object-oriented programming concepts and data structures and algorithms.
-
-
-
-<br/><br/>As a quick learner, I am eager to embrace new technologies and frameworks to improve my skills as a web developer. I am excited to contribute to impactful projects in computer science and information technology.
-
-
-
-
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum laborum, nulla consectetur deserunt eligendi sed quibusdam incidunt non soluta dignissimos minima ratione accusamus commodi eaque maiores, ab<br/><br/> aliquid! Rerum amet sit delectus distinctio expedita, similique odio sint voluptates explicabo optio eligendi numquam hic magnam voluptatum. Ipsa quasi illum accusamus veritatis soluta enim nesciunt, numquam <br/><br/>aperiam magnam doloribus dolores. Provident dolor, nulla velit voluptate quia architecto iste voluptatibus consequuntur quam tempora aliquid odit assumenda, sint vitae officiis reprehenderit fugiat aspernatur excepturi <br/><br/> commodi? Adipisci ipsum maiores provident, sit magni temporibus ratione laborum minima numquam dolore aut recusandae accusamus quam mollitia sed!
       </p>
     
       <TextSphere/>
       
       </div>
 
-     {/* <div><h1>My </h1> */}
+     
 
-      <div className=" flex mt-10 flex-wrap justify-center items-center gap-10">
+      <div className=" flex flex-wrap justify-center items-center gap-10">
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
-        </div>
-      {/* </div> */}
+      </div>
     </>
   );
 };

@@ -15,56 +15,16 @@ const Contact = () => {
     email : '',
     message : '',
   })
-//template_2pg73ec
-// service_h2vv6oq
-// 4B8LGhZJczTInOOb3
+  const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+  
+const handleChange =()=>{
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
+}
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  setLoading(true);
+const handleSubmit = () =>{
 
-  emailjs
-    .send(
-     "service_h2vv6oq",
-      "template_2pg73ec",
-      {
-        from_name: form.name,
-        to_name: "Asad Ullah",
-        from_email: form.email,
-        to_email: "shaikhasad183@gmail.com",
-        message: form.message,
-      },
-      "4B8LGhZJczTInOOb3"
-    )
-    .then(
-      () => {
-        setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
-
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      },
-      (error) => {
-        setLoading(false);
-        console.error(error);
-
-        alert("Ahh, something went wrong. Please try again.");
-      }
-    );
-};
+}
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse  flex gap-10 overflow-hidden">

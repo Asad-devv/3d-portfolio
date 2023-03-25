@@ -16,8 +16,7 @@ const Contact = () => {
     message : '',
   })
 //template_2pg73ec
-// service_h2vv6oq
-// 4B8LGhZJczTInOOb3
+service_h2vv6oq
 
   const handleChange = (e) => {
     const { target } = e;
@@ -35,16 +34,16 @@ const handleSubmit = (e) => {
 
   emailjs
     .send(
-     "service_h2vv6oq",
-      "template_2pg73ec",
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
-        to_name: "Asad Ullah",
+        to_name: "JavaScript Mastery",
         from_email: form.email,
-        to_email: "shaikhasad183@gmail.com",
+        to_email: "sujata@jsmastery.pro",
         message: form.message,
       },
-      "4B8LGhZJczTInOOb3"
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     )
     .then(
       () => {

@@ -39,12 +39,12 @@ const handleSubmit = (e) => {
       "template_2pg73ec",
       {
         from_name: form.name,
-        to_name: "Asad Ullah",
+        to_name: "JavaScript Mastery",
         from_email: form.email,
-        to_email: "shaikhasad183@gmail.com",
+        to_email: "sujata@jsmastery.pro",
         message: form.message,
       },
-      "4B8LGhZJczTInOOb3"
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     )
     .then(
       () => {

@@ -46,7 +46,7 @@ const About = () => {
 
 
 
-<br/><br/>As a quick learner, I am eager to embrace new technologies and frameworks to improve my skills as a web developer. I am excited to contribute to impactful projects in computer science and information technology.
+<br/><br/>As a quick learner, I am always eager to embrace new technologies and frameworks to further develop my skills as a web developer. I am committed to staying up-to-date with the latest trends and advancements in the field and look forward to contributing to impactful projects in computer science and information technology.
 
 
 

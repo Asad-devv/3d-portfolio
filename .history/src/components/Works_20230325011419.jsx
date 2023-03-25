@@ -23,7 +23,7 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link})=>{
         <img
           src={image}
           alt='project_image'
-          className='w-full h-[95%] object-fill rounded-2xl'
+          className='w-full h-[9%] object-fill rounded-2xl'
         />
 
         <div className='absolute inset-1  flex justify-end m-3 card-img_hover'>
@@ -69,7 +69,7 @@ const Works = () => {
     </div>
     <div className="w-full flex">
       <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'  variants={fadeIn("","", 0.1,1 )}>
-      As a React developer, my portfolio showcases my ability to create efficient and elegant user interfaces. I specialize in building custom components, implementing complex state management, and optimizing performance. Each project tells a unique story, highlighting my innovative solutions to real-world problems. I am dedicated to delivering high-quality work and excited to continue growing as a developer.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum recusandae veniam optio ducimus beatae nam officiis nisi quod, debitis reiciendis eligendi officia ullam repellendus cumque saepe reprehenderit a nulla molestiae. Odio voluptatum reprehenderit rem voluptate rerum distinctio delectus blanditiis itaque sequi tempore adipisci, vel doloremque voluptatibus, soluta autem pariatur cum, voluptatem vero!
       </p>
     </div>
     <div className="mt-20 flex flex-wrap gap-7" >

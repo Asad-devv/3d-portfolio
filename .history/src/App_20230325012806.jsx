@@ -34,7 +34,7 @@ function App() {
           <About />
           {/* <div> <TextShpere/></div> */}
           
-          <Experience />
+          {/* <Experience /> */}
 
           <Tech /> 
           <Works />

@@ -41,10 +41,10 @@ const handleSubmit = (e) => {
         from_name: form.name,
         to_name: "Asad Ullah",
         from_email: form.email,
-        to_email: "shaikhasad183@gmail.com",
+        to_email: "asadshaik",
         message: form.message,
       },
-      "4B8LGhZJczTInOOb3"
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     )
     .then(
       () => {

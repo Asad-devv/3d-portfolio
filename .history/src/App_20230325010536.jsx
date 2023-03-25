@@ -34,9 +34,9 @@ function App() {
           <About />
           {/* <div> <TextShpere/></div> */}
           
-          <Experience />
+          {/* <Experience /> */}
 
-          <Tech /> 
+          {/* <Tech />  */}
           <Works />
           <Feedbacks />
           <div className="relative z-0">

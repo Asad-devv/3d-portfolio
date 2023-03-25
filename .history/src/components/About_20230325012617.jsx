@@ -42,15 +42,9 @@ const About = () => {
 
 
 
-<br/><br/> My skills include proficiency in HTML, CSS, JavaScript, Reactjs, Bootstrap, Tailwind, C++, C, Python, OOP, and DSA. I have a solid understanding of object-oriented programming concepts and data structures and algorithms.
+<br/><br/> My skillset includes proficiency in <bold> HTML, CSS, JavaScript, Reactjs, Bootstrap, Tailwind, C++, C, Python,Threejs, OOP, and DSA</bold>. I have a solid understanding of object-oriented programming concepts and have worked extensively with data structures and algorithms. I am constantly looking to expand my knowledge and stay up-to-date with the latest web development trends and technologies.
 
-
-
-<br/><br/>As a quick learner, I am eager to embrace new technologies and frameworks to improve my skills as a web developer. I am excited to contribute to impactful projects in computer science and information technology.
-
-
-
-
+<br/><br/>aperiam magnam doloribus dolores. Provident dolor, nulla velit voluptate quia architecto iste voluptatibus consequuntur quam tempora aliquid odit assumenda, sint vitae officiis reprehenderit fugiat aspernatur exceptur
       </p>
     
       <TextSphere/>
